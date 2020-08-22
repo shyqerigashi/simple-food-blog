@@ -1,5 +1,44 @@
 /* This media query is used only for mobile devices */
 @media only screen and (max-width: 767px) {
+  .hamburger {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/hamburger.svg');
+    background-size: cover;
+  }
+  .nav_wrapper {
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    position: fixed;
+    height: 0;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    padding: 20px 35px;
+    background: #f2f3f3;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav_wrapper.is--toggled {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    height: calc(100% - 80px);
+  }
+  .box {
+    margin-top: 50px;
+  }
+  .box__thumb {
+    height: 300px;
+  }
+  .blog_section {
+    margin-bottom: 50px;
+  }
+  .footerWrap {
+    height: 60px;
+    flex-direction: column-reverse;
+  }
 }
 /* This media query is used only for small tablet devices */
 @media only screen and (min-width: 768px) and (max-width: 990px) {
