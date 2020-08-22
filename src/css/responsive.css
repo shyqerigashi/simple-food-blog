@@ -36,12 +36,19 @@
     margin-bottom: 50px;
   }
   .footerWrap {
-    height: 60px;
+    height: 80px;
     flex-direction: column-reverse;
+    padding: 20px 0;
   }
 }
 /* This media query is used only for small tablet devices */
 @media only screen and (min-width: 768px) and (max-width: 990px) {
+  .box {
+    margin-top: 50px;
+  }
+  .box__thumb {
+    height: 350px;
+  }
 }
 /* This media query is used only for big tablet devices */
 @media only screen and (min-width: 991px) and (max-width: 1199px) {
