@@ -8,6 +8,10 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <title>Simple Food Blog</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/grid.css" />
     <link rel="stylesheet" href="src/css/style.css" />
@@ -17,12 +21,53 @@
   <body>
     <!-- BEGIN HEADER -->
     <header id="header" class="main_header">
-      <div class="headerWrap"></div>
+      <div class="container">
+        <div class="headerWrap">
+          <div class="logo">
+            <a href="index.html">
+              <img src="src/images/logo.svg" alt="Logo" />
+            </a>
+          </div>
+          <nav class="nav_wrapper">
+            <ul>
+              <li><a href="#">Tips</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Recipes</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <!-- END HEADER -->
     <!-- BEGIN MAIN -->
     <main id="main" class="main_content">
-      <div class="mainWrap"></div>
+      <div class="mainWrap">
+        <section class="block_section blog_section">
+          <div class="container">
+            <div class="row">
+              <div class="column-4">
+                <div class="box">
+                  <a href="single.html">
+                    <div class="box__thumb">
+                      <img src="src/images/blog-1.jpg" alt="Blog post 1" />
+                    </div>
+                    <div class="box__content">
+                      <span>Lifestyle</span>
+                      <h4>Minimalist Kitchen</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore (…)
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <!-- END MAIN -->
     <!-- BEGIN FOOTER -->
