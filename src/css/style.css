@@ -61,6 +61,7 @@
   border-radius: 8px;
   background-image: url('../images/box-no-image.svg');
   background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
 .box__thumb img {
